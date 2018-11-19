@@ -24,36 +24,39 @@ https://drive.google.com/drive/folders/1OebN-MsPHKLExSjS66rTZIDVJqs1Fmx0?usp=sha
 - once publish completed, open the appsetting.json file from applications folder "RoadStatus\RoadStatus\bin\Release\netcoreapp2.1\win-x64"
 - updated the user credential details for accessing the Rest API https://api.tfl.gov.uk. Enter your API_ID and APP_Key values that you got when registering in https://api-portal.tfl.gov.uk/ and save and close the file.
 -  Following is the appsettings.json format
-        {
-
+    
+     {
+     
           "BaseAddress": "https://api.tfl.gov.uk/",
           "AppId": "userAppID",
           "AppKey": "userAppKey"
-        }
+          
+      }
+     
  - Application can be execute from Windows Powershell window.
     In the powershell window go the following folder "RoadStatus\RoadStatus\bin\Release\netcoreapp2.1\win-x64"
 * PS C:\TFLTest\RoadStatus\bin\Release\netcoreapp2.1\win-x64> .\RoadStatus.exe A23
 * Following message will be displayed on the console as output
-  *  The status of the A2 is as follows
-        Road Status is Good
-        Road Status Description is No Exceptional Delays
+  > The status of the A2 is as follows
+     >   Road Status is Good
+      >  Road Status Description is No Exceptional Delays
         
  * PS C:\TFLTest\RoadStatus\bin\Release\netcoreapp2.1\win-x64> echo $lastexitcode
  * Following message will be displayed on the console as output
- * 0
+ > 0
 
 * PS C:\TFLTest\RoadStatus\bin\Release\netcoreapp2.1\win-x64> .\RoadStatus.exe A233
 
 * Following message will be displayed on the console as output
-* A233 is not a valid road
+> A233 is not a valid road
 
  * PS C:\TFLTest\RoadStatus\bin\Release\netcoreapp2.1\win-x64> echo $lastexitcode
  * Following message will be displayed on the console as output
- * 1
+ > 1
  
  
  - Test steps
- * Test can be run from power shell command prompt for from inside visual studio
+ * Test can be run from power shell command prompt or from inside visual studio
     * Running test from command prompt
     * open powershell windon and go to folder C:\TFLTest\RoadStatus\RoadStatusTest
     * run the following command from command prompt
