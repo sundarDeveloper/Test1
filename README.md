@@ -19,7 +19,8 @@ https://drive.google.com/drive/folders/1OebN-MsPHKLExSjS66rTZIDVJqs1Fmx0?usp=sha
 - open the solution file "RoadStatus.sln" using Visual Studio
 - Build the solution
 - From visual studio solution explorer select RoadStatus project and Select Publish option to publish console app. 
-- currently Publish Target Location is set to "bin\Release\netcoreapp2.1\publish"
+- currently following publish settings are set to generate win-x64 executable.
+> Publish Target Location is set to "bin\Release\netcoreapp2.1\publish"
 > Deployment Mode is set to Self-Contained and Target Runtime is set to win-x64
 - once publish completed, open the appsetting.json file from applications folder "RoadStatus\RoadStatus\bin\Release\netcoreapp2.1\win-x64"
 - updated the user credential details for accessing the Rest API https://api.tfl.gov.uk. Enter your API_ID and APP_Key values that you got when registering in https://api-portal.tfl.gov.uk/ and save and close the file.
