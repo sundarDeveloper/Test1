@@ -6,7 +6,7 @@ https://drive.google.com/drive/folders/1OebN-MsPHKLExSjS66rTZIDVJqs1Fmx0?usp=sha
 
 # Projects:
 - RoadStatus 
-    * Console Appication - .Net Core
+    * Console Application - .Net Core
   
     * bThis app will connects to REST API at https://api.tfl.gov.uk and get status of major roads and display the results in console.
    
